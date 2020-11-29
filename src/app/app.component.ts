@@ -26,4 +26,10 @@ export class AppComponent {
     get items(): readonly TodoItem[] {
       return this.list.items;
     }
+
+    addItem(newItem) {
+      if (newItem != "") {
+        this.list.addItem(newItem);
+      }
+    }
 }
